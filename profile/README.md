@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://www.olostep.com/logo.png" alt="Olostep Logo" width="120" />
+<img src="https://www.olostep.com/images/olostep_logo.png" alt="Olostep Logo" width="120" />
 
 # Olostep
 
