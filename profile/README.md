@@ -29,7 +29,7 @@ Whether you're building AI agents, LLM pipelines, data products, or automating r
 
 ## Why Olostep?
 
-**Building AI applications or research workflows?** You need reliable, clean data from the web. Olostep handles the complexity of modern web scraping — bot detection, JavaScript-heavy pages, dynamic content, and schema-aligned extraction — so you don't have to.
+**Scaling an AI product or company?** You need reliable, clean data from the web. Olostep handles the complexity of modern web scraping — bot detection, JavaScript-heavy pages, dynamic content, and schema-aligned extraction — so you don't have to.
 
 - 🔍 **Web Search API** — Programmatic access to real-time web search results
 - 🕷️ **Web Scraping API** — Extract clean, structured data from any URL, even JS-rendered pages
@@ -38,6 +38,24 @@ Whether you're building AI agents, LLM pipelines, data products, or automating r
 - ⚡ **Real-Time Extraction** — No caching, no stale data — live results every time
 - 🛡️ **Anti-Bot Bypass** — Built-in handling for the toughest scraping challenges
 
+The most cost-effective and reliable web data API on the market — trusted by top AI agents and leading companies. [See pricing →](https://www.olostep.com/pricing)
+
+
+---
+ 
+## Olostep Endpoints
+ 
+| Endpoint | Description | Docs |
+|---|---|---|
+| **[Answers](https://www.olostep.com/answers-endpoint)** `POST /v1/answers` | Ask a question in natural language; get a source-backed answer and optional structured JSON — ideal for grounding LLMs on live web data | [→](https://docs.olostep.com/features/answers/answers) |
+| **[Search](https://www.olostep.com/searches-endpoint)** `POST /v1/searches` | Semantic web search from a plain-English query — deduplicated links with titles and descriptions | [→](https://docs.olostep.com/searches/searches) |
+| **[Scrapes](https://www.olostep.com/scrapes-endpoint)** `POST /v1/scrapes` | Extract content from any URL — markdown, HTML, JSON, screenshots, and structured extraction | [→](https://docs.olostep.com/features/scrapes/scrapes) |
+| **[Maps](https://www.olostep.com/maps-endpoint)** `POST /v1/maps` | Discover all URLs for a single domain with filters and cursor pagination | [→](https://docs.olostep.com/features/maps/maps) |
+| **[Crawls](https://www.olostep.com/crawls-endpoint)** `POST /v1/crawls` | Walk an entire site from a start URL with depth and page limits; retrieve content per page | [→](https://docs.olostep.com/features/crawls/crawls) |
+| **[Batches](https://www.olostep.com/batches-endpoint)** `POST /v1/batches` | Process large lists of arbitrary URLs in one job — with webhooks, parsers, and cursor pagination | [→](https://docs.olostep.com/features/batches/batches) |
+ 
+→ [See all endpoints](https://www.olostep.com/endpoints)
+ 
 ---
 
 ## Core Repositories
@@ -116,6 +134,6 @@ crawl = client.crawl("https://example.com", max_pages=50)
 
 <div align="center">
 
-**[olostep.com](https://www.olostep.com/)** · The web data infrastructure for AI startups and modern companies.
+**[olostep.com](https://www.olostep.com/)** · The web scraping, crawling, and search API powering the world's leading AI agents and companies.
 
 </div>
