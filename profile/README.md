@@ -65,6 +65,7 @@ The most cost-effective and reliable web data API on the market — trusted by t
 | **[olostep-js](https://github.com/olostep-api/olostep-js)** | Official JavaScript / TypeScript SDK |
 | **[olostep-py](https://github.com/olostep-api/olostep-py)** | Official Python SDK |
 | **[olostep-mcp-server](https://github.com/olostep/olostep-mcp-server)** | Olostep MCP Server |
+| **[CLI](https://github.com/olostep-api/CLI)** | Olostep CLI |
 
 ---
 
