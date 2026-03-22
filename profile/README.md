@@ -137,6 +137,25 @@ for page in crawl.pages():
 
 ---
 
+## Integrations
+ 
+**Agents & AI Tools**
+ 
+- 🔨 [MCP Server](https://www.olostep.com/integrations/mcp-server) — Connect any MCP-compatible AI (Cursor, Claude, Windsurf) to live web data
+- 🦜 [LangChain](https://www.olostep.com/integrations/langchain) — Add web scraping, search, and crawling to LangChain and LangGraph agents
+- 🟣 [Apify](https://www.olostep.com/integrations/apify) — Deploy Olostep as a managed Apify Actor with scheduled runs and dataset exports
+- ⚡ [Mastra](https://www.olostep.com/integrations/mastra) — Integrate web scraping and search into Mastra AI agents and workflows
+ 
+**Workflow Automation**
+ 
+- 🔗 [Zapier](https://www.olostep.com/integrations/zapier) — Connect web data to 8,000+ apps without writing code
+- 🔁 [n8n](https://www.olostep.com/integrations/n8n) — Use Olostep as native nodes in your self-hosted n8n workflows
+- 🔀 [Relay](https://www.olostep.com/integrations/relay) — Add web scraping and search to Relay's workflow builder with human-in-the-loop support
+ 
+[View all integrations →](https://www.olostep.com/integrations)
+ 
+---
+
 ## Resources
 
 - 📖 [Documentation](https://docs.olostep.com/get-started/welcome) — Full API reference and guides
