@@ -48,7 +48,7 @@ The most cost-effective and reliable web data API on the market — trusted by t
 | Endpoint | Description | Docs |
 |---|---|---|
 | **[Answers](https://www.olostep.com/answers-endpoint)** `POST /v1/answers` | Ask a question in natural language; get a source-backed answer and optional structured JSON — ideal for grounding LLMs on live web data | [→](https://docs.olostep.com/features/answers/answers) |
-| **[Search](https://www.olostep.com/searches-endpoint)** `POST /v1/searches` | Semantic web search from a plain-English query — deduplicated links with titles and descriptions | [→](https://docs.olostep.com/searches/searches) |
+| **[Searches](https://www.olostep.com/searches-endpoint)** `POST /v1/searches` | Semantic web search from a plain-English query — deduplicated links with titles and descriptions | [→](https://docs.olostep.com/searches/searches) |
 | **[Scrapes](https://www.olostep.com/scrapes-endpoint)** `POST /v1/scrapes` | Extract content from any URL — markdown, HTML, JSON, screenshots, and structured extraction | [→](https://docs.olostep.com/features/scrapes/scrapes) |
 | **[Maps](https://www.olostep.com/maps-endpoint)** `POST /v1/maps` | Discover all URLs for a single domain with filters and cursor pagination | [→](https://docs.olostep.com/features/maps/maps) |
 | **[Crawls](https://www.olostep.com/crawls-endpoint)** `POST /v1/crawls` | Walk an entire site from a start URL with depth and page limits; retrieve content per page | [→](https://docs.olostep.com/features/crawls/crawls) |
@@ -63,7 +63,7 @@ The most cost-effective and reliable web data API on the market — trusted by t
 | Repository | Description |
 |---|---|
 | **[olostep-js](https://github.com/olostep-api/olostep-js)** | Official JavaScript / TypeScript SDK |
-| **[olostep-python](https://github.com/olostep-api/olostep-python)** | Official Python SDK |
+| **[olostep-py](https://github.com/olostep-api/olostep-py)** | Official Python SDK |
 | **[amazon-price-tracker](https://github.com/olostep-api/amazon-price-tracker)** | Track Amazon product prices with Streamlit + Olostep |
 
 ---
@@ -79,15 +79,11 @@ npm install olostep
 ```javascript
 import Olostep from 'olostep';
 
-const client = new Olostep({ apiKey: 'YOUR_API_KEY' });
+const client = new Olostep({apiKey: process.env.OLOSTEP_API_KEY});
 
-// Scrape a page
-const result = await client.scrape('https://example.com');
-console.log(result.markdown);
-
-// Search the web
-const search = await client.search('best web scraping API 2025');
-console.log(search.results);
+// Minimal scrape example
+const result = await client.scrapes.create('https://example.com');
+console.log(result.id, result.html_content);
 ```
 
 ### Python
@@ -99,14 +95,31 @@ pip install olostep
 ```python
 from olostep import Olostep
 
-client = Olostep(api_key="YOUR_API_KEY")
+client = Olostep(api_key="your-api-key")
 
-# Scrape a page
-result = client.scrape("https://example.com")
-print(result.markdown)
+# Simple scraping
+result = client.scrapes.create(url_to_scrape="https://example.com")
+print(f"Scraped {len(result.markdown_content)} characters")
+
+# Multiple formats
+result = client.scrapes.create(
+    url_to_scrape="https://example.com",
+    formats=["html", "markdown"]
+)
+print(f"HTML: {len(result.html_content)} chars")
+print(f"Markdown: {len(result.markdown_content)} chars")
 
 # Crawl a website
-crawl = client.crawl("https://example.com", max_pages=50)
+crawl = client.crawls.create(
+    start_url="https://www.olostep.com",
+    max_pages=100,
+    include_urls=["/integrations/**", "/blog/**"],
+    exclude_urls=["/careers/**"]
+)
+
+for page in crawl.pages():
+    content = page.retrieve(["html"])
+    print(f"Crawled: {page.url}")
 ```
 
 ---
