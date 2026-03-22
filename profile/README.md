@@ -38,8 +38,9 @@ Whether you're building AI agents, LLM pipelines, data products, or automating r
 - ⚡ **Real-Time Extraction** — No caching, no stale data — live results every time
 - 🛡️ **Anti-Bot Bypass** — Built-in handling for the toughest scraping challenges
 
-The most cost-effective and reliable web data API on the market — trusted by top AI agents and leading companies. [See pricing →](https://www.olostep.com/pricing)
+Olostep is the most cost-effective and reliable web data API on the market — trusted by top AI agents and leading companies. [See pricing →](https://www.olostep.com/pricing)
 
+Get started for free — every account includes free credits, no credit card required. [Sign up at olostep.com](https://www.olostep.com/) to get your API key and start extracting clean, structured data from the web. Try the [playground](https://www.olostep.com/playground) to test it live before writing a single line of code.
 
 ---
  
@@ -50,9 +51,9 @@ The most cost-effective and reliable web data API on the market — trusted by t
 | **[Answers](https://www.olostep.com/answers-endpoint)** `POST /v1/answers` | Ask a question in natural language; get a source-backed answer and optional structured JSON — ideal for grounding LLMs on live web data | [→](https://docs.olostep.com/features/answers/answers) |
 | **[Searches](https://www.olostep.com/searches-endpoint)** `POST /v1/searches` | Semantic web search from a plain-English query — deduplicated links with titles and descriptions | [→](https://docs.olostep.com/searches/searches) |
 | **[Scrapes](https://www.olostep.com/scrapes-endpoint)** `POST /v1/scrapes` | Extract content from any URL — markdown, HTML, JSON, screenshots, and structured extraction | [→](https://docs.olostep.com/features/scrapes/scrapes) |
-| **[Maps](https://www.olostep.com/maps-endpoint)** `POST /v1/maps` | Discover all URLs for a single domain with filters and cursor pagination | [→](https://docs.olostep.com/features/maps/maps) |
-| **[Crawls](https://www.olostep.com/crawls-endpoint)** `POST /v1/crawls` | Walk an entire site from a start URL with depth and page limits; retrieve content per page | [→](https://docs.olostep.com/features/crawls/crawls) |
-| **[Batches](https://www.olostep.com/batches-endpoint)** `POST /v1/batches` | Process large lists of arbitrary URLs in one job — with webhooks, parsers, and cursor pagination | [→](https://docs.olostep.com/features/batches/batches) |
+| **[Maps](https://www.olostep.com/maps-endpoint)** `POST /v1/maps` | Discover all URLs on a website. You can set filters and cursor pagination | [→](https://docs.olostep.com/features/maps/maps) |
+| **[Crawls](https://www.olostep.com/crawls-endpoint)** `POST /v1/crawls` | Scrape all pages of a website with a single request — set a start URL, define depth and page limits, and retrieve content for every page found | [→](https://docs.olostep.com/features/crawls/crawls) |
+| **[Batches](https://www.olostep.com/batches-endpoint)** `POST /v1/batches` | Process up to 10k URL in one job (5-8 mins) — with webhooks, parsers, and cursor pagination | [→](https://docs.olostep.com/features/batches/batches) |
  
 → [See all endpoints](https://www.olostep.com/endpoints)
  
@@ -70,6 +71,8 @@ The most cost-effective and reliable web data API on the market — trusted by t
 ---
 
 ## Quick Start
+
+Sign up at olostep.com to get your API key. Try the playground to test it out.
 
 ### JavaScript / TypeScript
 
